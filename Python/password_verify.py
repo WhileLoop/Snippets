@@ -1,4 +1,4 @@
-# Example usage: python password_verify.py password $(python password_encrypt.py password)
+# Usage: python password_verify.py password $(python password_encrypt.py password)
 
 import sys
 import hashlib

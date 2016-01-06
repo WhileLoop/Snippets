@@ -1,5 +1,5 @@
 # Download a single file from S3.
-# Example Usage: python boto_s3_download_file.py my_s3_bucket example_file.zip
+# Usage: python boto_s3_download_file.py my_s3_bucket example_file.zip
 
 import sys
 from boto.s3.connection import S3Connection

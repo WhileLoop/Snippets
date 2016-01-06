@@ -1,4 +1,4 @@
-# Example Usage: python boto-get-rds-logs us-east-1 dr16eb76m902o1j 1452104128607
+# Usage: python boto-get-rds-logs us-east-1 dr16eb76m902o1j 1452104128607
 
 import sys
 import boto.rds
