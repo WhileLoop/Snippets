@@ -22,4 +22,4 @@ python manage.py runserver 0.0.0.0:8000
 
 python -c "import django; print(django.get_version())"
 
-python -c "import django; print(django.__path__)"
+python -c "import django; print(django.\_\_path\_\_)"
