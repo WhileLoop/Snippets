@@ -1,0 +1,14 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 's3cms/style.css' %}" />
+
+<h1>{{ salesitem.title }}</h1>
+<div>
+    <span>Price:</span>
+    <span>{{ salesitem.price }}</span>
+</div>
+<img class="img-detail" src="{{ salesitem.image.url }}"></img>
+<div>
+    <h3>Description:</h3>
+    <p>{{ salesitem.description }}</p>
+</div>

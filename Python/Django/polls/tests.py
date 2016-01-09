@@ -45,7 +45,9 @@ class QuestionMethodTests(TestCase):
         recent_question = Question(pub_date=time)
         self.assertEqual(recent_question.was_published_recently(), True)
 
+
 class QuestionViewTests(TestCase):
+
     def test_index_view_with_no_questions(self):
         """
         If no questions exist, an appropriate message should be displayed.
@@ -105,6 +107,7 @@ class QuestionViewTests(TestCase):
 
 
 class QuestionIndexDetailTests(TestCase):
+
     def test_detail_view_with_a_future_question(self):
         """
         The detail view of a question with a pub_date in the future should

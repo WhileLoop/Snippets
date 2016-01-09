@@ -1,0 +1,22 @@
+{% load staticfiles %}
+
+<link rel="stylesheet" type="text/css" href="{% static 's3cms/style.css' %}" />
+
+{% if all_sales_items %}
+    <table>
+        <tr>
+            <th>Image</th>
+            <th>Title</th>
+            <th>Price</th>
+        </tr>
+        {% for item in all_sales_items %}
+        <tr>
+            <td><img class="img-list" src="{{ item.image.url }}"/></td>
+            <td><a href="{% url 's3cms:detail' item.id %}">{{ item.title }}</a></td>
+            <td>${{ item.price }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+{% else %}
+    <p>No items are available.</p>
+{% endif %}
